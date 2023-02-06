@@ -4,6 +4,8 @@ import FavoritesList from '../components/FavoritesList/FavoritesList';
 import SlidersList from '../components/SlidersList/SlidersList';
 import PoolsList from '../components/PoolsList/PoolsList';
 import Sidebar from '../components/Sidebar/Sidebar';
+import Pagination from '../components/Pagination/Pagination';
+import Footer from '../components/Footer/Footer';
 
 
 function Home() {
@@ -15,6 +17,8 @@ function Home() {
                 <FavoritesList/>
                 <SlidersList/>
                 <PoolsList/>
+                <Pagination/>
+                <Footer/>
             </div>
         </div>
     )

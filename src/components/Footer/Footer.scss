@@ -1,0 +1,49 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer__icons{
+        display: flex;
+        a{
+            margin: 0 12px;
+        }
+    }
+    .footer__info{
+        margin-left: 155px;
+        p{
+        font-size: 14px;
+        color: #374160;
+        }
+    }
+    .footer__stores{
+        display: flex;
+        .footer__stores-flipper{
+            perspective: 1000;
+            .footer__stores-flipper_inner{
+                position: relative;
+                transition: .6s;
+                transform-style: preserve-3d;
+                .front{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    backface-visibility: hidden;
+                    z-index: 2;
+                }
+                .back{
+                    transform: rotateY(180deg);
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    backface-visibility: hidden;
+                }
+            }
+            &:hover .footer__stores-flipper_inner{
+                transform: rotateY(180deg);
+            }
+            &:first-child{
+                margin-right: 16px;
+            }
+        }
+    }
+}
