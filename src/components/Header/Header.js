@@ -1,0 +1,74 @@
+import { useState } from 'react';
+
+import './Header.scss';
+
+import connectWallet from '../../assets/img/connect_wallet.svg';
+import search from '../../assets/img/header_search.svg';
+import bnb from '../../assets/img/bnb.png';
+import ethereum from '../../assets/img/ethereum.png';
+import polygon from '../../assets/img/polygon.png';
+
+
+function Header() {
+
+    const [cryptoList, setCryptoList] = useState(false);
+
+    const [activeCrypto, setActiveCrypto] = useState({name: 'BNB Chain', img: bnb});
+
+    let num = 1;
+
+    let cryptoButtonsData = [
+        {name: 'Ethereum', img: ethereum},
+        {name: 'BNB Chain', img: bnb},
+        {name: 'Polygon', img: polygon}
+    ];
+
+    let changeCrypto = (e) => {
+        cryptoButtonsData.forEach(active => {
+            if(active.name === e.target.textContent){
+                setCryptoList(false);
+                return (
+                    setActiveCrypto({name: active.name, img: active.img})
+                )
+            };
+        })
+    } 
+
+
+    let cryptoButtons = cryptoButtonsData.map(item => {
+        return (
+            <button data={item.name} key={num++} onClick={(e) => changeCrypto(e)}>
+                <img src={item.img} alt="" />
+                {item.name}
+            </button>
+        )
+    })
+
+
+    return(
+        <div className="header">
+            <div className="header__coins" id="headerCoins">
+                <button className={`header__coins-active ${cryptoList ? 'active' : ''}`} onClick={() => {
+                    setCryptoList(!cryptoList)
+                }}>
+                    <img src={activeCrypto.img} alt="" />
+                    {activeCrypto.name}
+                </button>
+                <div className={`header__coins-list ${cryptoList ? 'active' : ''}`}>
+                    {cryptoButtons}
+                </div>
+            </div>
+            <p className="header__balance">BNB: $311.45</p>
+            <div className="header__search">
+                <img src={search} alt="" />
+                <input type="text" placeholder='Search network, dex or tokens' />
+            </div>
+            <button className="header__button">
+                <img src={connectWallet} alt="" />
+                Connect Wallet
+            </button>
+        </div>
+    )
+}
+
+export default Header;

@@ -1,0 +1,120 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    .header__coins{
+        position: relative;
+        z-index: 10000;
+        .header__coins-active{
+            background: #151926;
+            border: 1px solid #1D243A;
+            border-radius: 6px;
+            font-size: 16px;
+            color: #fff;
+            margin-right: 16px;
+            padding: 10px 100px 10px 8px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 1000;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                background-image: url('../../assets/img/select_arrow.svg');
+                background-repeat: no-repeat;
+                transition: all .3s;
+            }
+            &.active::after{
+                transform: rotate(180deg);
+                top: 40%;
+            }
+            img{
+                margin-right: 8px;
+                width: 28px;
+                height: 28px;
+            }
+        }
+        .header__coins-list{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            top: -50%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s;
+            width: 100%;
+            &.active{
+                top: 120%;
+                opacity: 1;
+                visibility: visible;
+            }
+            button{
+                display: flex;
+                align-items: center;
+                background: #0F111C;
+                font-size: 16px;
+                color: #fff;
+                margin-right: 16px;
+                padding: 10px 8px;
+                border: none;
+                img{
+                    margin-right: 8px;
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+            button:nth-child(odd){
+                background: #151926;
+            }
+        }
+    }
+    .header__search{
+        width: 60%;
+        input{
+            width: 100%;
+            display: block;
+        }
+    }
+    .header__balance{
+        color: #fff;
+        margin-right: 65px;
+    }
+    .header__search{
+        position: relative;
+        margin-right: 16px;
+        input{
+            padding: 16px 55px;
+            color: #374160;
+            background-color: #151926;
+            border: 1px solid #1D243A;
+            border-radius: 6px;
+        }
+        img{
+            position: absolute;
+            top: 15px;
+            left: 27px;
+        }
+    }
+    .header__button{
+        background: linear-gradient(93.3deg, rgba(23, 212, 187, 0.6) 0%, rgba(34, 41, 74, 0.6) 51.56%, rgba(100, 47, 197, 0.6) 100%), #11141F;
+        border-radius: 6px;
+        padding: 12px 20px;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+
+

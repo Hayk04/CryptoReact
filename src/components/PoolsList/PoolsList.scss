@@ -1,0 +1,18 @@
+.pools__table{
+    h2{
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    .pools__list{
+        .pools__list-titles{
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            border: 1px solid #1D243A;
+            padding: 16px 87px 16px 20px;
+            .pools__list-pool{
+                margin-right: 150px;
+            }
+        }
+    }
+}

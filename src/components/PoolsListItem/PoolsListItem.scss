@@ -1,0 +1,45 @@
+.pool__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #1D243A;
+    padding: 16px 90px 16px 20px;
+    .pool__item-num{
+        color: #374160;
+    }
+    .pool__item-info{
+        display: flex;
+        align-items: center;
+        margin-left: -100px;
+        img{
+            width: 32px;
+            height: 32px;
+            margin-right: 16px;
+        }
+    }
+    .pool__item-5m{
+        color: #60F5C2;
+        transform: translate(40px);
+    }
+    .pool__item-1h{
+        transform: translate(10px);
+    }
+    .pool__item-6h{
+        transform: translate(-20px);
+    }
+    .pool__item-24h{
+        transform: translate(-50px);
+    }
+    .pool__item-volume{
+        transform: translate(-65px);
+    }
+    .pool__item-1h,
+    .pool__item-6h,
+    .pool__item-24h{
+        color: #EA3943;
+    }
+    .pool__item-txns{
+        margin-left: -15px;
+    }
+}

@@ -1,0 +1,94 @@
+.sliders__list-item{
+    color: #fff;
+    width: 590px;
+    background: #151926;
+    border: 1px solid #1D243A;
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+    h3{
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-family: 'GothamProBold';
+    }
+    .swiper{
+        padding-bottom: 16px;
+        transform: translateY(-20px);
+        padding-top: 30px;
+        .swiper-button-prev{
+            top: 5px;
+            right: 25px;
+            left: auto;
+            &::after{
+                color: transparent;
+                background: url('../../assets/img/slider_left.svg');
+                background-repeat: no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .swiper-button-next{
+            top: 5px;
+            right: 0;
+            &::after{
+                color: transparent;
+                background: url('../../assets/img/slider_right.svg');
+                background-repeat: no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .swiper-pagination-bullet{
+            background: #374160;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active{
+            background: #60F5C2;
+        }
+        .SwiperSlide{
+            .slider__list{
+                .slider__list-item{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 8px;
+                    .slider__list-num{
+                        color: #374160;
+                    }
+                    .slider__list-name{
+                        display: flex;
+                        &.sli{
+                            transform: translateX(-60px);
+                        }
+                        &.slim{
+                            transform: translateX(-49px);
+                        }
+                        img{
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 8px;
+                        }
+                        p{
+                            color: #fff;
+                            span{
+                                color: #374160;
+                            }
+                        }
+                    }
+                    .slider__list-price{
+                        color: #374160;
+                    }
+                    .slider__list-percent{
+                        &.plus{
+                            color: #60F5C2;
+                        }
+                        &.minus{
+                            color: #EA3943;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            bottom: 0;
+        }
+    }    
+}

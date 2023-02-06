@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "GothamPro";
+  src: url("./assets/font/gothampro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("./assets/font/gothampro_bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamProLight";
+  src: url("./assets/font/gothampro_light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("./assets/font/gothampro_medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("./assets/font/gothampro_black.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "GothamPro";
+}
+
+body {
+  background-color: #11141F;
+  line-height: 1.2;
+  font-size: 16px;
+}
+
+.App{
+  padding: 16px;
+  display: flex;
+
+  .content{
+    width: calc(100% - 80px);
+    margin-left: auto;
+  }
+  
+}
