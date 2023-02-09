@@ -3,22 +3,28 @@ import './Footer.scss';
 import telegram from '../../assets/img/telegram.svg';
 import discord from '../../assets/img/discord.svg';
 import twitter from '../../assets/img/twitter.svg';
-import appStore from '../../assets/img/app-store.png';
-import googlePlay from '../../assets/img/google-play.png';
-import soon from '../../assets/img/soon.svg';
+import apple from '../../assets/img/apple.svg';
+import play from '../../assets/img/play.svg';
+
 
 function Footer() {
     return(
         <div className="footer">
             <div className="footer__icons">
                 <a href="#">
-                    <img src={telegram} alt="" />
+                    <span>
+                        <img src={telegram} alt="" />
+                    </span>
                 </a>
                 <a href="#">
-                    <img src={discord} alt="" />
+                    <span>
+                        <img src={discord} alt="" />
+                    </span>
                 </a>
                 <a href="#">
-                    <img src={twitter} alt="" />
+                    <span>
+                        <img src={twitter} alt="" />
+                    </span>
                 </a>
             </div>
             <div className="footer__info">
@@ -28,20 +34,28 @@ function Footer() {
                 <div className="footer__stores-flipper">
                     <div className="footer__stores-flipper_inner">
                         <div className="front">
-                            <img src={appStore} alt="" />
+                            <img src={apple} alt="" />
+                            <div className="front__txt apple">
+                                <span>Download on the</span>
+                                <p>App Store</p>
+                            </div>
                         </div>
                         <div className="back">
-                            <img src={soon} alt="" />
+                            <p>soon</p>
                         </div>
                     </div>
                 </div>
                 <div className="footer__stores-flipper">
                     <div className="footer__stores-flipper_inner">
                         <div className="front">
-                            <img src={googlePlay} alt="" />
+                            <img src={play} alt="" />
+                            <div className="front__txt play">
+                                <span>GET IN ON</span>
+                                <p>Google Play</p>
+                            </div>
                         </div>
                         <div className="back">
-                            <img src={soon} alt="" />
+                            <p>soon</p>
                         </div>
                     </div>
                 </div>

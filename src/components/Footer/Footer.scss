@@ -6,6 +6,19 @@
         display: flex;
         a{
             margin: 0 12px;
+            position: relative;
+            span{
+                padding: 10px;
+                background-color: #192039;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                transition: .3s;
+            }
+            &:hover span{
+                box-shadow: 0px 0px 0px 1px #fff;
+            }
         }
     }
     .footer__info{
@@ -23,12 +36,37 @@
                 position: relative;
                 transition: .6s;
                 transform-style: preserve-3d;
+                background: #151926;
+                border: 1px solid #1D243A;
+                border-radius: 4px;
+                width: 138px;
+                height: 51px;
                 .front{
                     position: absolute;
                     top: 0;
                     left: 0;
                     backface-visibility: hidden;
                     z-index: 2;
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    img{
+                        margin-right: 6px;
+                    }
+                    span{
+                        font-size: 8px;
+                    }
+                    .apple p{
+                        font-size: 16px;
+                        transform: translateY(-4px);
+                    }
+                    .play p{
+                        font-size: 14px;
+                        transform: translateY(-4px);
+                    }
                 }
                 .back{
                     transform: rotateY(180deg);
@@ -36,6 +74,18 @@
                     top: 0;
                     left: 0;
                     backface-visibility: hidden;
+                    background-color: #F0F2F5;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        color: #000;
+                        font-family: "GothamProMedium";
+                        text-transform: uppercase;
+                    }
                 }
             }
             &:hover .footer__stores-flipper_inner{

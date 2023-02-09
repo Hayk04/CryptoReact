@@ -1,5 +1,3 @@
-
-
 import './PoolsListItem.scss';
 
 import ethereum from '../../assets/img/ethereum.png';
