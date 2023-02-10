@@ -17,6 +17,9 @@
             height: 32px;
             margin-right: 16px;
         }
+        p span{
+            color: #374160;
+        }
     }
     .pool__item-5m{
         color: #60F5C2;
@@ -41,5 +44,33 @@
     }
     .pool__item-txns{
         margin-left: -15px;
+    }
+    @media only screen and (max-width: 1660px){
+        justify-content: start;
+        width: 1700px;
+        .pool__item-num{
+            margin-right: 25px;
+        }
+        .pool__item-info{
+            margin-left: 0;
+            margin-right: 150px;
+        }
+        .pool__item-price{
+            margin-right: 120px;
+        }
+        .pool__item-txns{
+            margin-right: 170px;
+        }
+        .pool__item-5m,
+        .pool__item-1h,
+        .pool__item-6h{
+            margin-right: 100px;
+        }
+        .pool__item-24h{
+            margin-right: 115px;
+        }
+        .pool__item-volume{
+            margin-right: 130px;
+        }
     }
 }

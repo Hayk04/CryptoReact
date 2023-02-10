@@ -13,7 +13,41 @@
             padding: 16px 87px 16px 20px;
             .pools__list-pool{
                 margin-right: 150px;
+                @media only screen and (max-width: 1760px){
+                    margin-right: 130px;
+                }
             }
+            @media only screen and (max-width: 1660px){
+                justify-content: start;
+                width: 1700px;
+                .pools__list-pool{
+                    margin-right: 290px;
+                }
+                .pools__list-price{
+                    margin-right: 130px;
+                }
+                .pools__list-txns{
+                    margin-right: 180px;
+                }
+                .pools__list-5m{
+                    margin-right: 100px;
+                }
+                .pools__list-1h{
+                    margin-right: 110px;
+                }
+                .pools__list-6h{
+                    margin-right: 110px;
+                }
+                .pools__list-24h{
+                    margin-right: 120px;
+                }
+                .pools__list-volume{
+                    margin-right: 140px;
+                }
+            }
+        }
+        @media only screen and (max-width: 1660px){
+            overflow-x: auto;
         }
     }
 }

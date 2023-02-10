@@ -7,16 +7,16 @@ function PoolsList() {
     let num = 1;
 
     const poolsData = [
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
-        {name: 'ETH/WBNB', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
+        {name: 'ETH', slug: 'ethereum', price: "$0.9981", txns: "61,287", "5m": "+0.02%", "1h": "-0.44%", "6h": "-0.42%", "24h": "-0.45%", volume: "$18M", liquidity: "$137.6M", id: num++},
     ];
 
     const elements = poolsData.map(item => {

@@ -8,6 +8,32 @@
     height: 100%;
     transition: all .4s ease-in-out;
     padding: 85px 24px;
+    .sidebar__top{
+        display: none;
+        a{
+            font-size: 22px;
+            color: #fff;
+            text-decoration: none;
+        }
+        button{
+            background-color: transparent;
+            border: none;
+        }
+        .sidebar__btn{
+            width: 100%;
+            margin: 40px 0;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        left: -100%;
+        overflow-y: auto;
+        padding: 30px 15px;
+        .sidebar__top{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
     .sidebar__list{
         display: flex;
         flex-direction: column;
@@ -47,4 +73,26 @@
             }
         }
     }
+    &.active{
+        left: 0;
+        width: 100%;
+    }
+    @media only screen and (max-width: 768px){
+        a span{
+            opacity: 1 !important;
+            left: 60px !important;
+        }
+    }
+    .mobile .footer{
+        .footer__icons{
+            margin: 40px 0;
+        }
+        .footer__info{
+            text-align: center;
+        }
+        .footer__stores{
+            margin-bottom: 30px;
+        }
+    }
 }
+

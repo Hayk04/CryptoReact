@@ -28,6 +28,14 @@ function SlidersListItem({title, high}) {
                 navigation={true}
                 loop={true}
                 modules={[Pagination, Navigation]}
+                breakpoints={{
+                    768: {
+                        allowTouchMove: true
+                    },
+                    320: {
+                        allowTouchMove: false
+                    }
+                }}
                 >
                 <SwiperSlide className='SwiperSlide'>
                     <ul className="slider__list">
@@ -69,7 +77,7 @@ function SlidersListItem({title, high}) {
                 <SwiperSlide className='SwiperSlide'>
                     <ul className="slider__list">
                         <li className="slider__list-item">
-                            <p className="slider__list-num">1.</p>
+                            <p className="slider__list-num">4.</p>
                             <div className="slider__list-name sli">
                                 <img src={ethereum} alt="" />
                                 <p>
@@ -80,7 +88,7 @@ function SlidersListItem({title, high}) {
                             <p className={`slider__list-percent ${high ? 'plus' : 'minus'}`}>+9.48%</p>
                         </li>
                         <li className="slider__list-item">
-                            <p className="slider__list-num">2.</p>
+                            <p className="slider__list-num">5.</p>
                             <div className="slider__list-name slim">
                                 <img src={ethereum} alt="" />
                                 <p>
@@ -91,7 +99,7 @@ function SlidersListItem({title, high}) {
                             <p className={`slider__list-percent ${high ? 'plus' : 'minus'}`}>+12.06%</p>
                         </li>
                         <li className="slider__list-item">
-                            <p className="slider__list-num">3.</p>
+                            <p className="slider__list-num">6.</p>
                             <div className="slider__list-name sli">
                                 <img src={ethereum} alt="" />
                                 <p>
@@ -106,7 +114,7 @@ function SlidersListItem({title, high}) {
                 <SwiperSlide className='SwiperSlide'>
                     <ul className="slider__list">
                         <li className="slider__list-item">
-                            <p className="slider__list-num">1.</p>
+                            <p className="slider__list-num">7.</p>
                             <div className="slider__list-name sli">
                                 <img src={ethereum} alt="" />
                                 <p>
@@ -117,7 +125,7 @@ function SlidersListItem({title, high}) {
                             <p className={`slider__list-percent ${high ? 'plus' : 'minus'}`}>+9.48%</p>
                         </li>
                         <li className="slider__list-item">
-                            <p className="slider__list-num">2.</p>
+                            <p className="slider__list-num">8.</p>
                             <div className="slider__list-name slim">
                                 <img src={ethereum} alt="" />
                                 <p>
@@ -128,7 +136,7 @@ function SlidersListItem({title, high}) {
                             <p className={`slider__list-percent ${high ? 'plus' : 'minus'}`}>+12.06%</p>
                         </li>
                         <li className="slider__list-item">
-                            <p className="slider__list-num">3.</p>
+                            <p className="slider__list-num">9.</p>
                             <div className="slider__list-name sli">
                                 <img src={ethereum} alt="" />
                                 <p>

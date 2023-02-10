@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import Sidebar from '../Sidebar/Sidebar';
+
 import './Header.scss';
 
 import connectWallet from '../../assets/img/connect_wallet.svg';
@@ -7,9 +9,12 @@ import search from '../../assets/img/header_search.svg';
 import bnb from '../../assets/img/bnb.png';
 import ethereum from '../../assets/img/ethereum.png';
 import polygon from '../../assets/img/polygon.png';
+import menu from '../../assets/img/menu.svg';
+import closeMenuImg from '../../assets/img/close.svg';
 
 
-function Header() {
+
+function Header({page}) {
 
     const [cryptoList, setCryptoList] = useState(false);
 
@@ -44,6 +49,11 @@ function Header() {
         )
     })
 
+    
+    let [menuActive, setMenuActive] = useState(false);
+
+    window.menu = menuActive;
+    
 
     return(
         <div className="header">
@@ -58,15 +68,22 @@ function Header() {
                     {cryptoButtons}
                 </div>
             </div>
-            <p className="header__balance">BNB: $311.45</p>
+            <p className="header__balance desk">BNB: $311.45</p>
             <div className="header__search">
                 <img src={search} alt="" />
                 <input type="text" placeholder='Search network, dex or tokens' />
             </div>
-            <button className="header__button">
+            <button className='header__search-btn'>
+                <img src={search} alt="" />
+            </button>
+            <button className="header__button desk">
                 <img src={connectWallet} alt="" />
                 Connect Wallet
             </button>
+            <button className="menu" onClick={() => setMenuActive(!menuActive)}>
+                <img src={menuActive ? closeMenuImg : menu} alt="" />
+            </button>
+            <Sidebar page={page} open={menuActive}/>
         </div>
     )
 }

@@ -1,3 +1,4 @@
+import Footer from '../Footer/Footer';
 
 import './Sidebar.scss';
 
@@ -10,11 +11,20 @@ import pieChart from '../../assets/img/sidebar/pie-chart.svg';
 import presentation from '../../assets/img/sidebar/presentation.svg';
 import refresh from '../../assets/img/sidebar/refresh.svg';
 import search from '../../assets/img/sidebar/search.svg';
+import connectWallet from '../../assets/img/connect_wallet.svg';
+
+function Sidebar({page, open}) {
 
 
-function Sidebar({page}) {
     return(
-        <div className="sidebar">
+        <div className={`sidebar ${open === true ? 'active' : ''}`}>
+            <div className="sidebar__top">
+                <a href="#">Logo</a>
+                <button className="header__button mobile sidebar__btn">
+                    <img src={connectWallet} alt="" />
+                    Connect Wallet
+                </button>
+            </div>
             <ul className="sidebar__list">
                 <li className={`sidebar__list-item ${page === 'home' ? 'active' : ''}`}>
                     <a href="#">
@@ -65,6 +75,9 @@ function Sidebar({page}) {
                     </a>
                 </li>
             </ul>
+            <div className="mobile">
+                <Footer/>
+            </div>
         </div>
     )
 }
