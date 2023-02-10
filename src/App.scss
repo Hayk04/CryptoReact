@@ -38,12 +38,68 @@ body {
 }
 
 .App{
-  padding: 16px;
-  display: flex;
+    padding: 16px;
+    display: flex;
+    .content{
+        width: calc(100% - 80px);
+        margin-left: auto;
+        @media only screen and (max-width: 768px){
+            width: 100%;
+        }
+        .tabs__container{
+            .tabs__content{
+                @media only screen and (max-width: 768px){
+                    padding-bottom: 50px;
+                    .tabs__content-item{
+                        display: none;
+                        &.active{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .tabs__buttons{
+                display: none;
+                background-color: #151926;
+                border-top: 1px solid #1D243A;
+                padding: 5px 20px;
+                @media only screen and (max-width: 768px){
+                    display: flex;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+                .tabs__btn{
+                    background-color: transparent;
+                    border: none;
+                    color: #374160;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    &.active{
+                        color: #fff;
 
-  .content{
-    width: calc(100% - 80px);
-    margin-left: auto;
-  }
+                    }
+                }
+            }
+        }
+    }
   
+}
+
+.mobile{
+    display: none;
+    @media only screen and (max-width: 768px){
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .desk{
+        display: none !important;
+    }
 }

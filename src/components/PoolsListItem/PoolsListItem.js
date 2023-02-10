@@ -9,7 +9,10 @@ function PoolsListItem(props) {
             <div className="pool__item-num">{props.id}.</div>
             <div className="pool__item-info">
                 <img src={ethereum} alt="" />
-                <p>{props.name}</p>
+                <p>
+                    {props.name}
+                    <span>/WBNB</span>
+                    </p>
             </div>
             <div className="pool__item-price">{props.price}</div>
             <div className="pool__item-txns">{props.txns}</div>
